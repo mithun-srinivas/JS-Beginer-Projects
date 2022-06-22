@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SECTION</title>
+</head>
+<body >
+    <h1>FAQ Section</h1>
+    <hr>
+    <section class="faq-container">
+        <div>
+            <h2 class="faq-question">FAQ 01</h2>
+            <p class="faq-answer">The Answer for the FAQ 01</p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div>
+            <h2 class="faq-question">FAQ 02</h2>
+            <p class="faq-answer">The Answer for the FAQ 02</p>
+        </div>
+    </section>
+    <hr>
+    
+</body>
+<script src="./index.js">
+    
+</script>
+<style>
+    body{
+        background-color: #242B2E;
+    }
+    h1{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .faq-container{
+    display: flex;
+    flex-direction: column;
+    }
+    .faq-question {
+        padding: 30px 20px;
+        width: 96%;
+        outline: none;
+        transition: 0.4s;
+        color: white;
+    }
+    .active,
+    .faq-question:hover {
+        background-color: #F9F9F9;
+        color: #242B2E;
+    }
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-answer {
+        background-color: #F9F9F9;
+        color: #242B2E;
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+    }
+    .faq-question:after {
+        font-size: 13px;
+        color: #777;
+    }
+</style>
+</html>
